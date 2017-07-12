@@ -16,7 +16,7 @@ public class ProductUtil {
         product.setPriceSale(new BigDecimal(15));
         product.setPriceSale(new BigDecimal(7));
 
-        product.setCategory(CategoryUtil.createCategory());
+        // product.setCategory(CategoryUtil.createCategory());
 
         return product;
     }

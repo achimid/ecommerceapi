@@ -16,11 +16,11 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 public class BaseDomain {
     @JsonFormat(pattern = "dd/MM/yyyy")
-    @Column(nullable = false)
+    // @Column(nullable = false)
     protected LocalDateTime createdAt;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    @Column(nullable = false)
+    // @Column(nullable = false)
     protected LocalDateTime updatedAt;
 
     @PrePersist
