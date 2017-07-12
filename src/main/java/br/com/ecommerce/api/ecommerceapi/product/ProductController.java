@@ -27,6 +27,7 @@ public class ProductController implements ProductControllerDocumentation {
     public HttpEntity<Product> create(@Valid @RequestBody Product product){
         productService.save(product);
         return ResponseEntity.ok(product);
+
     }
 
 
