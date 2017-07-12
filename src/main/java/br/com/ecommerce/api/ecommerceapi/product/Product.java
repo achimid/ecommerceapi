@@ -1,5 +1,7 @@
-package br.com.ecommerce.api.ecommerceapi.domain;
+package br.com.ecommerce.api.ecommerceapi.product;
 
+import br.com.ecommerce.api.ecommerceapi.base.BaseDomain;
+import br.com.ecommerce.api.ecommerceapi.category.Category;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

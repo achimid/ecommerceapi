@@ -1,4 +1,4 @@
-package br.com.ecommerce.api.ecommerceapi.domain;
+package br.com.ecommerce.api.ecommerceapi.base;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
