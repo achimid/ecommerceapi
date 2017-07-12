@@ -4,6 +4,7 @@ import br.com.ecommerce.api.ecommerceapi.base.BaseDomain;
 import br.com.ecommerce.api.ecommerceapi.category.Category;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -26,7 +27,7 @@ public class Product extends BaseDomain {
     private BigDecimal priceCost;
     private String description;
     @JoinColumn
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, cascade = CascadeType.PERSIST)
     private Category category;
 
 }

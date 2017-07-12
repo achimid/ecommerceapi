@@ -19,7 +19,9 @@ public class ProductController implements ProductControllerDocumentation {
 
     @GetMapping
     public List<Product> index(){
+        productService.save(ProductUtil.createProduct());
         return productService.findAll();
+
     }
 
 
