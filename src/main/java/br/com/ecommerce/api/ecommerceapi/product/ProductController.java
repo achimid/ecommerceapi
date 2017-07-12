@@ -50,7 +50,9 @@ public class ProductController implements ProductControllerDocumentation {
         return ResponseEntity.ok(product);
     }
 
-
-
+    @GetMapping("/newTest")
+    public HttpEntity<Product> get(){
+        return create(ProductUtil.createProduct());
+    }
 
 }
