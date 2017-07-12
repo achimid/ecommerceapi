@@ -23,6 +23,11 @@ public class ProductService implements BaseService<Product> {
     }
 
     @Override
+    public Product findOne(Long id) {
+        return productRepository.findOne(id);
+    }
+
+    @Override
     public void save(Product product) {
         productRepository.save(product);
     }
@@ -34,5 +39,9 @@ public class ProductService implements BaseService<Product> {
         } else {
             throw new RuntimeException("Produto não encontrado");
         }
+    }
+
+    public Boolean exists(Long id){
+        return productRepository.exists(id);
     }
 }

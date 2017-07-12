@@ -27,7 +27,7 @@ public class Product extends BaseDomain {
     private BigDecimal priceCost;
     private String description;
     @JoinColumn
-    @ManyToOne(optional = false, cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Category category;
 
 }
