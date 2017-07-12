@@ -3,8 +3,10 @@ package br.com.ecommerce.api.ecommerceapi.domain;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.persistence.*;
-import java.math.BigDecimal;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * Created by Lourran on 11/07/2017.
@@ -12,19 +14,11 @@ import java.math.BigDecimal;
 @Data
 @Entity
 @EqualsAndHashCode(of = "id", callSuper = false)
-public class Product extends BaseDomain {
-
+public class Category extends BaseDomain {
     @Id
     @GeneratedValue
     private Long id;
     @Column(nullable = false)
     private String name;
-    @Column(nullable = false)
-    private BigDecimal priceSale;
-    private BigDecimal priceCost;
     private String description;
-    @JoinColumn
-    @ManyToOne(optional = false)
-    private Category category;
-
 }
