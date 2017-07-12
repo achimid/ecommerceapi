@@ -1,10 +1,11 @@
 package br.com.ecommerce.api.ecommerceapi.product;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -19,9 +20,13 @@ public class ProductController implements ProductControllerDocumentation {
 
     @GetMapping
     public List<Product> index(){
-        productService.save(ProductUtil.createProduct());
         return productService.findAll();
+    }
 
+    @PostMapping
+    public HttpEntity<Product> create(@Valid @RequestBody Product product){
+        productService.save(product);
+        return ResponseEntity.ok(product);
     }
 
 
