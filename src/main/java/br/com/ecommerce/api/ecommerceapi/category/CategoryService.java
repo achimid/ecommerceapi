@@ -35,7 +35,7 @@ public class CategoryService implements BaseService<Category> {
         if (categoryRepository.exists(id)) {
             categoryRepository.delete(id);
         } else {
-            throw new RuntimeException("Produto não encontrado");
+            throw new RuntimeException("Categoria não encontrada");
         }
     }
 

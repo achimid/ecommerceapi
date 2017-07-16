@@ -16,6 +16,7 @@ import java.math.BigDecimal;
  */
 @Data
 @Entity
+@Table(name = "products")
 @EqualsAndHashCode(of = "id", callSuper = false)
 public class Product extends BaseDomain {
 
@@ -36,8 +37,8 @@ public class Product extends BaseDomain {
 
     private String description;
 
-    // @JoinColumn
-    // @ManyToOne(cascade = CascadeType.PERSIST)
-    // private Category category;
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name="id_category")
+    private Category category;
 
 }
