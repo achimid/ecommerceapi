@@ -11,7 +11,7 @@ public interface BaseService<T> {
 
     List<T> findAll();
 
-    public Product findOne(Long id);
+    public T findOne(Long id);
 
     void save(T obj);
 

@@ -15,19 +15,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 public class ApplicationConfig extends WebMvcConfigurerAdapter {
 
-    @Bean
-    public EmbeddedServletContainerCustomizer containerCustomizer() {
-        return (container ->
-                container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404"),
-                        new ErrorPage(HttpStatus.FORBIDDEN, "/403")));
-    }
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**")
-                .addResourceLocations("/resources/");
-    }
-
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addRedirectViewController("/", "/home");

@@ -12,24 +12,24 @@ import java.time.LocalDateTime;
 /**
  * Created by Lourran on 11/07/2017.
  */
-@Data
-@MappedSuperclass
+// @Data
+// @MappedSuperclass
 public class BaseDomain {
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    // @JsonFormat(pattern = "dd/MM/yyyy")
     // @Column(nullable = false)
-    protected LocalDateTime createdAt;
+    // protected LocalDateTime createdAt;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    // @JsonFormat(pattern = "dd/MM/yyyy")
     // @Column(nullable = false)
-    protected LocalDateTime updatedAt;
+    // protected LocalDateTime updatedAt;
 
-    @PrePersist
-    public void prePersist() {
-        this.createdAt = this.updatedAt = LocalDateTime.now();
-    }
+    // @PrePersist
+    // public void prePersist() {
+//         this.createdAt = this.updatedAt = LocalDateTime.now();
+//     }
 
-    @PreUpdate
-    public void preUpdate() {
-        this.updatedAt = LocalDateTime.now();
-    }
+    // @PreUpdate
+//  public void preUpdate() {
+//      this.updatedAt = LocalDateTime.now();
+//     }
 }
