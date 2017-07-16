@@ -12,7 +12,7 @@ public class HomePage {
 
     private static final String INDEX_PAGE = "index.html";
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public ModelAndView index(){
         return new ModelAndView(INDEX_PAGE);
     }
