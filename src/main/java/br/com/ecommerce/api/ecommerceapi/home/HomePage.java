@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by Lourran on 15/07/2017.
  */
 @Controller
-public class home {
+public class HomePage {
 
     private static final String INDEX_PAGE = "index.html";
 
