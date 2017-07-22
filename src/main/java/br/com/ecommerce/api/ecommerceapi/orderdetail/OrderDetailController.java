@@ -1,7 +1,6 @@
 package br.com.ecommerce.api.ecommerceapi.orderdetail;
 
 import br.com.ecommerce.api.ecommerceapi.order.Order;
-import br.com.ecommerce.api.ecommerceapi.order.OrderControllerDocumentation;
 import br.com.ecommerce.api.ecommerceapi.order.OrderService;
 import br.com.ecommerce.api.ecommerceapi.order.OrderUtil;
 import org.springframework.beans.factory.annotation.Autowired;

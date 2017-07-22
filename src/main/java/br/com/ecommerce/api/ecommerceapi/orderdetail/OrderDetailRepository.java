@@ -1,6 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.orderdetail;
 
-import br.com.ecommerce.api.ecommerceapi.order.Order;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

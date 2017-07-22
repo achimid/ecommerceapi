@@ -2,10 +2,7 @@ package br.com.ecommerce.api.ecommerceapi.order;
 
 import br.com.ecommerce.api.ecommerceapi.base.intefaces.BaseService;
 import br.com.ecommerce.api.ecommerceapi.orderdetail.OrderDetail;
-import br.com.ecommerce.api.ecommerceapi.orderdetail.OrderDetailRepository;
 import br.com.ecommerce.api.ecommerceapi.orderdetail.OrderDetailService;
-import br.com.ecommerce.api.ecommerceapi.product.Product;
-import br.com.ecommerce.api.ecommerceapi.product.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

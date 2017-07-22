@@ -8,7 +8,6 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 

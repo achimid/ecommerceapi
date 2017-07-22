@@ -2,11 +2,7 @@ package br.com.ecommerce.api.ecommerceapi.order;
 
 import br.com.ecommerce.api.ecommerceapi.orderdetail.OrderDetail;
 import br.com.ecommerce.api.ecommerceapi.orderdetail.OrderDetailUtil;
-import br.com.ecommerce.api.ecommerceapi.product.Product;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.xml.soap.Detail;
-import java.math.BigDecimal;
 import java.util.GregorianCalendar;
 import java.util.LinkedList;
 import java.util.List;

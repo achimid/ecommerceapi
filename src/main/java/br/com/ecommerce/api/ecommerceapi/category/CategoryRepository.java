@@ -1,6 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.category;
 
-import br.com.ecommerce.api.ecommerceapi.category.Category;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

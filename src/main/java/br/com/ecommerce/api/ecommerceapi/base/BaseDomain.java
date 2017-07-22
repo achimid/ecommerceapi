@@ -1,14 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.base;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Data;
-
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-import java.time.LocalDateTime;
-
 /**
  * Created by Lourran on 11/07/2017.
  */

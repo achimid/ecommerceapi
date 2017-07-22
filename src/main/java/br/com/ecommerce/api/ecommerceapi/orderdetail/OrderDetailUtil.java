@@ -1,8 +1,6 @@
 package br.com.ecommerce.api.ecommerceapi.orderdetail;
 
 import br.com.ecommerce.api.ecommerceapi.order.Order;
-import br.com.ecommerce.api.ecommerceapi.order.OrderUtil;
-import br.com.ecommerce.api.ecommerceapi.product.Product;
 import br.com.ecommerce.api.ecommerceapi.product.ProductUtil;
 
 import java.math.BigDecimal;

@@ -1,9 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.category;
 
-import br.com.ecommerce.api.ecommerceapi.product.Product;
-import br.com.ecommerce.api.ecommerceapi.product.ProductControllerDocumentation;
-import br.com.ecommerce.api.ecommerceapi.product.ProductService;
-import br.com.ecommerce.api.ecommerceapi.product.ProductUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;

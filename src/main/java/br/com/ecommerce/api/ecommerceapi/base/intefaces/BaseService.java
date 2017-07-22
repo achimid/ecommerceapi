@@ -1,7 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.base.intefaces;
 
-import br.com.ecommerce.api.ecommerceapi.product.Product;
-
 import java.util.List;
 
 /**

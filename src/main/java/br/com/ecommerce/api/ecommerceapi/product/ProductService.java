@@ -1,7 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.product;
 
-import br.com.ecommerce.api.ecommerceapi.product.Product;
-import br.com.ecommerce.api.ecommerceapi.product.ProductRepository;
 import br.com.ecommerce.api.ecommerceapi.base.intefaces.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

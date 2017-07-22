@@ -1,7 +1,6 @@
 package br.com.ecommerce.api.ecommerceapi.order;
 
 import br.com.ecommerce.api.ecommerceapi.base.intefaces.BaseControllerDocumentation;
-import br.com.ecommerce.api.ecommerceapi.product.Product;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.bind.annotation.PathVariable;

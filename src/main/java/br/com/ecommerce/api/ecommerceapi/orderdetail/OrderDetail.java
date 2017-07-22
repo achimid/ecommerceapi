@@ -6,6 +6,7 @@ import br.com.ecommerce.api.ecommerceapi.product.Product;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;

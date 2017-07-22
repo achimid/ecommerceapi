@@ -4,7 +4,6 @@ import br.com.ecommerce.api.ecommerceapi.base.BaseDomain;
 import br.com.ecommerce.api.ecommerceapi.category.Category;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.hibernate.annotations.Cascade;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;

@@ -1,6 +1,5 @@
 package br.com.ecommerce.api.ecommerceapi.category;
 
-import br.com.ecommerce.api.ecommerceapi.product.Product;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.bind.annotation.PathVariable;
