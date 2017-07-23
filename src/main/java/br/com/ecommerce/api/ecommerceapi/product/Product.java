@@ -34,6 +34,8 @@ public class Product extends BaseDomain {
 
     private BigDecimal priceCost;
 
+    private String url;
+
     private String description;
 
     @ManyToOne(cascade = CascadeType.PERSIST)

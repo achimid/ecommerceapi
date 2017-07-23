@@ -25,11 +25,11 @@ public class OrderDetail extends BaseDomain{
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "id_order")
+    @JoinColumn(name = "id_order", referencedColumnName = "id")
     private Order order;
 
     @ManyToOne
-    @JoinColumn(name = "id_product")
+    @JoinColumn(name = "id_product", referencedColumnName = "id")
     private Product product;
 
     @NotNull(message = "Price não pode ser null")

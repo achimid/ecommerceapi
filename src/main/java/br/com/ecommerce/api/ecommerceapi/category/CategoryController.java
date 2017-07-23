@@ -52,7 +52,7 @@ public class CategoryController implements CategoryControllerDocumentation {
 
     @GetMapping("/newTest")
     public HttpEntity<Category> get(){
-        return create(CategoryUtil.createCategory());
+        return create(CategoryUtil.getInstance().createCategory());
     }
 
 }

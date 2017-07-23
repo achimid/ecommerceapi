@@ -58,9 +58,7 @@ public class OrderDetailController implements OrderDetailControllerDocumentation
 
     @GetMapping("/newTest")
     public HttpEntity<OrderDetail> get(){
-        Order order = OrderUtil.createOrder();
-        orderService.save(order);
-        return create(OrderDetailUtil.createOrderDetail(order));
+        return null;
     }
 
 }

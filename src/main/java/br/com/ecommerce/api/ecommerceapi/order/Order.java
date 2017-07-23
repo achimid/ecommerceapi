@@ -31,7 +31,7 @@ public class Order extends BaseDomain {
     @NotNull(message = "Final Price nao pode ser nulo")
     private BigDecimal finalPrice;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "order")
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "id")
     private List<OrderDetail> details;
 
     // @NotNull(message = "Order Adress nao pode ser nulo.")

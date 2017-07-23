@@ -35,7 +35,7 @@ public class OrderService implements BaseService<Order> {
     @Override
     @Transactional
     public void save(Order order) {
-        orderDetailService.save(order.getDetails());
+        //orderDetailService.save(order.getDetails());
         calculateOrder(order);
         orderRepository.save(order);
     }
@@ -51,10 +51,10 @@ public class OrderService implements BaseService<Order> {
 
     public void calculateOrder(Order order){
         BigDecimal sum = BigDecimal.ZERO;
-        for(OrderDetail detail: order.getDetails()){
-            sum = sum.add(detail.getPrice());
-        }
-        order.setFinalPrice(sum);
+        //for(OrderDetail detail: order.getDetails()){
+        //    sum = sum.add(detail.getPrice());
+        //}
+        //order.setFinalPrice(sum);
     }
 
     public Boolean exists(Long id){

@@ -52,7 +52,7 @@ public class OrderController implements OrderControllerDocumentation<Order> {
 
     @GetMapping("/newTest")
     public HttpEntity<Order> get(){
-        return create(OrderUtil.createOrder());
+        return create(OrderUtil.getInstance().createOrder());
     }
 
 }

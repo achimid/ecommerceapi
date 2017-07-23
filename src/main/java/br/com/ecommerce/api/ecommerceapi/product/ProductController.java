@@ -52,7 +52,7 @@ public class ProductController implements ProductControllerDocumentation {
 
     @GetMapping("/newTest")
     public HttpEntity<Product> get(){
-        return create(ProductUtil.createProduct());
+        return create(ProductUtil.getInstance().createProduct());
     }
 
 }
