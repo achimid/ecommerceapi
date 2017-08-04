@@ -38,7 +38,7 @@ public class Product extends BaseDomain {
 
     private String description;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne
     @JoinColumn(name="id_category")
     private Category category;
 
